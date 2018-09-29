@@ -1,0 +1,34 @@
+body {
+  padding: 0px;
+  //background: red;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a, a:hover 
+{
+ 	text-decoration: none;
+  	color: #00B7FF;
+}
+
+.navbar
+{
+	background: #f1f1f1;
+	padding: 2px;
+	text-align: center;
+}
+
+.navbar-nav
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	margin:auto;
+}
+
+.nav-item
+{
+	padding: 5px;
+	margin: 3px;
+	border-radius: 2px;
+	box-shadow: 0px 0px 1px grey;
+}

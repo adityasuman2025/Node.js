@@ -1,0 +1,25 @@
+doctype html
+html
+	head
+		title= NodeAuth
+		link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+body
+	nav.navbar.fixed-top
+		ul.navbar-nav
+			li.nav-item
+				a.nav-link(href="/") Members 
+			li.nav-item
+				a.nav-link(href="/users/register") Register
+			li.nav-item
+				a.nav-link(href="/users/login") LogIn
+
+			li.nav-item
+				a.nav-link(href="/users/logout") LogOut
+
+	.container
+		!= messages()
+		block content
+
+	script(src="/javascripts/jquery.js")
+	script(src="/javascripts/bootstrap.js")

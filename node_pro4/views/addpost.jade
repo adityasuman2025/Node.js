@@ -1,0 +1,22 @@
+extends layout
+
+block content
+	h1 #{title}
+	ul.errors
+		if errors
+			each error, i in errors
+				li.alert.alert-danger #{error.msg}
+
+	form(method="post", action="/posts/add", enctype="multipart/form-data")
+		input.form-control(name="title", type="text", placeholder="Title")
+		br
+		input.form-control(name="category", type="text", placeholder="Category")
+		br
+		input.form-control(name="author", type="text", placeholder="Author")
+		br
+		textarea.form-control(name="body", placeholder="Body")
+		br
+		input.form-control(name="mainimage", type="file")
+		br
+		br
+		input.btn.btn-default(name="submit", type="submit", value="Save")

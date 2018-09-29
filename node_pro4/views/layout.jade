@@ -1,0 +1,26 @@
+doctype html
+html
+	head
+		title NodeBlog
+
+		link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel="icon" href="/images/logo.png")
+	body
+		.container
+			img.logo(src="/images/logo.png" style="width:100px")
+
+			nav
+				ul
+					li
+						a(href="/") Home
+					li
+						a(href="/posts/add") Add Post
+					li
+						a(href="/") Add Category
+
+			!= messages()
+			block content
+
+			footer
+				p NodeBlog &copy; 2018
